@@ -13,38 +13,62 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
       <!-- Global site tag (gtag.js) - Google Analytics -->
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-DY377Z805P"></script>
+      
+    <!-- Jquery needed -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+<!-- Function used to shrink nav bar removing paddings and adding black background -->
+    <script>
+        $(window).scroll(function() {
+            if ($(document).scrollTop() > 50) {
+                $('.nav').addClass('affix');
+                console.log("OK");
+            } else {
+                $('.nav').removeClass('affix');
+            }
+        });
+    </script>
       <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
       <style>
       </style>
    </head>
    <body>
-      <!-- Srinidhi  https://github.com/Srinidhi182 --><section>
+      <nav class="nav">
+         <div class="container">
+             <!-- <div class="logo">
+                 <a href="#">Your Logo</a>
+             </div> -->
+             <div id="mainListDiv" class="main_list">
+                 <ul class="navlinks">
+                     <li><a href="#about">About</a></li>
+                     <li><a href="#tracks">Track</a></li>
+                     <li><a href="#FAQ">FAQ</a></li>
+                 </ul>
+             </div>
+             <span class="navTrigger">
+                 <i></i>
+                 <i></i>
+                 <i></i>
+             </span>
+         </div>
+     </nav>
+      <!-- Jay  https://github.com/Jaysus69 --><section>
       <div id="home">
-         <!-- <div class="topnav"></div>
-         <nav>
-             <div class="navitem">
-                 <div class="item1 active">Home</div>
-             </div>
-             <div class="navitem">
-                 <p>.</p>
-                 <div class="item2"></div>
-             </div>
-             <div class="navitem">
-                 <p>.</p>
-                 <div class="item3"></div>
-             </div>
-             <div class="navitem">
-                 <p>.</p>
-                 <div class="item4"></div>
-             </div>
-         </nav> -->
+         </div>
+          
+
+         
+    
+        
+
          <div class="homewrap">
              <h1>DEV/TRACK</h1>
              <p style="font-family: Montserrat;">A  community driven programming and designing club, encouraging hackers to shape their ideas</p>
              
              </div>
             </section>
-      <section>
+      <section id="about">
          <div class="container">
             <div class="box">
                <span></span>
@@ -130,7 +154,7 @@
        </div>
       </section>
       <!-- Sonal https://github.com/Sonaljothylingam -->
-      <section>
+      <section id="FAQ">
          <div class="containersh">
             <footer>
                <h1 class="trackh1">FAQ</h1>
